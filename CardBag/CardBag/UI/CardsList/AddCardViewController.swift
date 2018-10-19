@@ -8,10 +8,23 @@
 
 import UIKit
 
-class AddCardViewController: UIViewController {
-
+class AddCardViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let table = UITableViewCell()
+        table.textLabel?.text = "Slot1"
+        return table
+    }
+    
+    
+    @IBOutlet weak var TableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        TableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }

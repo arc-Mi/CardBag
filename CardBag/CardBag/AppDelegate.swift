@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(
         _ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let viewController = CardsListViewController()
         
-        window?.rootViewController = viewController
+        let navigation = UINavigationController(rootViewController: viewController)
+        
+        window?.rootViewController = navigation
         
         window?.makeKeyAndVisible()
         

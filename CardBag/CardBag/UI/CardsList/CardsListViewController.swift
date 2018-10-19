@@ -17,16 +17,49 @@ class CardsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Add"
+        
+//        let add = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(updateSampleLabel))
+        
+        let previous = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(prevPage))
+        let next = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(nextPage))
+        
+        navigationItem.leftBarButtonItem = previous
+        navigationItem.rightBarButtonItem = next
         
         changeTextButton.setTitle("Обновить текст", for: .normal)
         updateSampleLabel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     // MARK: - Приватные методы
     
-    private func updateSampleLabel() {
+    @objc private func updateSampleLabel() {
         sampleLabel.text = "Кол-во обновлений: \(labelUpdatesCount)"
         labelUpdatesCount += 1
+    }
+    
+    @objc private func nextPage() {
+        let next = EmptyPageViewController()
+        navigationController?.pushViewController(next, animated: true)
+    }
+    
+    @objc private func prevPage() {
+        let prev = AddCardViewController()
+        let navigation = UINavigationController(rootViewController: prev)
+        let closeButton = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(close))
+        
+        prev.navigationItem.title = "Таблица"
+        prev.navigationItem.leftBarButtonItem = closeButton
+        navigationController?.present(navigation, animated: true, completion: nil)
+    }
+    
+    @objc private func close() {
+        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Методы экшенов
