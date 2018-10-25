@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,21 +14,22 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AKl-r3-Vnk" userLabel="FrontPage">
-                                <rect key="frame" x="67.5" y="259" width="240" height="149"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="l3p-eg-sil">
+                                <rect key="frame" x="40" y="216.5" width="688" height="591"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="9t9-mh-5zv"/>
-                                    <constraint firstAttribute="width" constant="240" id="sXL-mE-KMq"/>
+                                    <constraint firstAttribute="width" secondItem="l3p-eg-sil" secondAttribute="height" multiplier="319:274" id="0ZQ-6i-HHa"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AKl-r3-Vnk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8Uu-mv-y3n"/>
-                            <constraint firstItem="AKl-r3-Vnk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wyb-jK-p5f"/>
+                            <constraint firstItem="l3p-eg-sil" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5pP-wB-kev"/>
+                            <constraint firstItem="l3p-eg-sil" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="G2o-Oq-8Ze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l3p-eg-sil" secondAttribute="trailing" constant="40" id="Ihm-TZ-wbs"/>
+                            <constraint firstItem="l3p-eg-sil" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MbY-tC-COS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="139" height="95"/>
+        <image name="Logo" width="256" height="256"/>
     </resources>
 </document>

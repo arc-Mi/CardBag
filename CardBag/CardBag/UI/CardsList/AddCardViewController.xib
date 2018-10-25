@@ -11,7 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCardViewController" customModule="CardBag" customModuleProvider="target">
             <connections>
-                <outlet property="TableView" destination="6XW-eN-hQl" id="lFx-Qv-hty"/>
+                <outlet property="btnPhoto" destination="8ID-BU-rzk" id="7q4-MP-oIe"/>
+                <outlet property="tblF" destination="Lm4-nq-9Ir" id="XgQ-1n-Xff"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,32 +21,55 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adt-8Z-yny">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Добавить карту" id="Q3D-ld-3Qh">
-                            <barButtonItem key="leftBarButtonItem" style="plain" id="Mt8-CQ-Lpv">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r1K-Wp-LjE">
-                                    <rect key="frame" x="16" y="11" width="14" height="22"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="close"/>
-                                </button>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6XW-eN-hQl">
-                    <rect key="frame" x="16" y="79" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lm4-nq-9Ir">
+                    <rect key="frame" x="10" y="40" width="355" height="150"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="v4d-iH-jwa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tdS-kc-RlO"/>
+                        <outlet property="delegate" destination="-1" id="AsZ-Lz-qeZ"/>
+                    </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ID-BU-rzk">
+                    <rect key="frame" x="24.5" y="210" width="326" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="326" id="Hma-aj-ePn"/>
+                        <constraint firstAttribute="height" constant="44" id="isQ-YE-lNc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Button" backgroundImage="but-bg">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onChangeBtn:" destination="-1" eventType="touchUpInside" id="uok-mC-p8K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-lX-K5R">
+                    <rect key="frame" x="336" y="104.5" width="12" height="21"/>
+                    <state key="normal" backgroundImage="arrowRightInactive"/>
+                    <connections>
+                        <action selector="onChangeCategories:" destination="-1" eventType="touchUpInside" id="R09-tt-TST"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nl2-lX-K5R" firstAttribute="centerY" secondItem="Lm4-nq-9Ir" secondAttribute="centerY" id="XME-Fg-d1K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lm4-nq-9Ir" secondAttribute="trailing" constant="10" id="Yax-YH-f5F"/>
+                <constraint firstItem="Lm4-nq-9Ir" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gUP-d4-WfA"/>
+                <constraint firstItem="8ID-BU-rzk" firstAttribute="top" secondItem="Lm4-nq-9Ir" secondAttribute="bottom" constant="20" id="kYA-KV-1bk"/>
+                <constraint firstItem="Lm4-nq-9Ir" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="tm9-Eo-gHL"/>
+                <constraint firstItem="8ID-BU-rzk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ySg-3O-p8U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nl2-lX-K5R" secondAttribute="trailing" constant="27" id="zXm-9L-Lqf"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52" y="81.409295352323838"/>
         </view>
     </objects>
     <resources>
-        <image name="close" width="14" height="15"/>
+        <image name="arrowRightInactive" width="12" height="21"/>
+        <image name="but-bg" width="326" height="44"/>
     </resources>
 </document>

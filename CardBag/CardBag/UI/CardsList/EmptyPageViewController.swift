@@ -12,19 +12,27 @@ class EmptyPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userButton = UIBarButtonItem(image: UIImage(named: "userActive"), style: .plain, target: self, action: #selector(addCard))
+        let addButton = UIBarButtonItem(image: UIImage(named: "addActive"), style: .plain, target: self, action: #selector(addCard))
+        
+        navigationItem.title = "CARDbag"
+        navigationItem.rightBarButtonItems = [addButton, userButton]
 
-        // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func addCard() {
+        let addPage = AddCardViewController()
+        let navigation = UINavigationController(rootViewController: addPage)
+        let closeButton = UIBarButtonItem(image: UIImage(named: "closeActive"), style: .plain, target: self, action: #selector(close))
+        
+        addPage.navigationItem.title = "Добавить карту"
+        addPage.navigationItem.leftBarButtonItem = closeButton
+        navigationController?.present(navigation, animated: true, completion: nil)
     }
-    */
-
+    
+    @objc private func close() {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

@@ -7,38 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8421CE172177B4FA00C469C5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE152177B4FA00C469C5 /* MainPageViewController.swift */; };
-		8421CE182177B4FA00C469C5 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE162177B4FA00C469C5 /* MainPageViewController.xib */; };
 		8421CE1B2177B54E00C469C5 /* EmptyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */; };
 		8421CE1C2177B54E00C469C5 /* EmptyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */; };
-		8421CE1F21787BC000C469C5 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE1D21787BC000C469C5 /* AddCardViewController.swift */; };
-		8421CE2021787BC000C469C5 /* AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE1E21787BC000C469C5 /* AddCardViewController.xib */; };
-		8421CE322178A95B00C469C5 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE312178A95B00C469C5 /* MyCustomCell.xib */; };
-		8421CE352178AA6400C469C5 /* UITableViewCell+MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE342178AA6400C469C5 /* UITableViewCell+MyCustomCell.m */; };
 		8449B06521704C5D00191D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449B06421704C5D00191D89 /* AppDelegate.swift */; };
 		8449B06C21704C6900191D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8449B06B21704C6900191D89 /* Assets.xcassets */; };
 		8449B06F21704C6900191D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8449B06D21704C6900191D89 /* LaunchScreen.storyboard */; };
-		8449B07A21704E8100191D89 /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449B07821704E8100191D89 /* CardsListViewController.swift */; };
-		8449B07B21704E8100191D89 /* CardsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8449B07921704E8100191D89 /* CardsListViewController.xib */; };
+		84FCB761217F7F8000E647FD /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCB760217F7F8000E647FD /* MyCustomCell.swift */; };
+		84FCB763217F7FB600E647FD /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB762217F7FB600E647FD /* MyCustomCell.xib */; };
+		84FCB766217F815C00E647FD /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCB764217F815C00E647FD /* AddCardViewController.swift */; };
+		84FCB767217F815C00E647FD /* AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB765217F815C00E647FD /* AddCardViewController.xib */; };
+		84FCB76A21804B3300E647FD /* FrontPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCB76821804B3300E647FD /* FrontPhotoViewController.swift */; };
+		84FCB76B21804B3300E647FD /* FrontPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB76921804B3300E647FD /* FrontPhotoViewController.xib */; };
+		84FCB771218194D700E647FD /* RearPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCB76F218194D700E647FD /* RearPhotoViewController.swift */; };
+		84FCB7742182034800E647FD /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCB7722182034800E647FD /* CategoriesViewController.swift */; };
+		84FCB7752182034800E647FD /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB7732182034800E647FD /* CategoriesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8421CE152177B4FA00C469C5 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		8421CE162177B4FA00C469C5 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPageViewController.swift; sourceTree = "<group>"; };
 		8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPageViewController.xib; sourceTree = "<group>"; };
-		8421CE1D21787BC000C469C5 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
-		8421CE1E21787BC000C469C5 /* AddCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardViewController.xib; sourceTree = "<group>"; };
-		8421CE312178A95B00C469C5 /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
-		8421CE332178AA6400C469C5 /* UITableViewCell+MyCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+MyCustomCell.h"; sourceTree = "<group>"; };
-		8421CE342178AA6400C469C5 /* UITableViewCell+MyCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+MyCustomCell.m"; sourceTree = "<group>"; };
 		8449B06121704C5D00191D89 /* CardBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8449B06421704C5D00191D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8449B06B21704C6900191D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8449B06E21704C6900191D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8449B07021704C6900191D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8449B07821704E8100191D89 /* CardsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
-		8449B07921704E8100191D89 /* CardsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsListViewController.xib; sourceTree = "<group>"; };
+		84FCB760217F7F8000E647FD /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		84FCB762217F7FB600E647FD /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		84FCB764217F815C00E647FD /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		84FCB765217F815C00E647FD /* AddCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardViewController.xib; sourceTree = "<group>"; };
+		84FCB76821804B3300E647FD /* FrontPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPhotoViewController.swift; sourceTree = "<group>"; };
+		84FCB76921804B3300E647FD /* FrontPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontPhotoViewController.xib; sourceTree = "<group>"; };
+		84FCB76F218194D700E647FD /* RearPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearPhotoViewController.swift; sourceTree = "<group>"; };
+		84FCB770218194D700E647FD /* RearPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RearPhotoViewController.xib; sourceTree = "<group>"; };
+		84FCB7722182034800E647FD /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		84FCB7732182034800E647FD /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,17 +101,18 @@
 		8449B07C21704E8F00191D89 /* CardsList */ = {
 			isa = PBXGroup;
 			children = (
-				8449B07821704E8100191D89 /* CardsListViewController.swift */,
-				8449B07921704E8100191D89 /* CardsListViewController.xib */,
-				8421CE152177B4FA00C469C5 /* MainPageViewController.swift */,
-				8421CE162177B4FA00C469C5 /* MainPageViewController.xib */,
 				8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */,
 				8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */,
-				8421CE1D21787BC000C469C5 /* AddCardViewController.swift */,
-				8421CE1E21787BC000C469C5 /* AddCardViewController.xib */,
-				8421CE312178A95B00C469C5 /* MyCustomCell.xib */,
-				8421CE332178AA6400C469C5 /* UITableViewCell+MyCustomCell.h */,
-				8421CE342178AA6400C469C5 /* UITableViewCell+MyCustomCell.m */,
+				84FCB764217F815C00E647FD /* AddCardViewController.swift */,
+				84FCB765217F815C00E647FD /* AddCardViewController.xib */,
+				84FCB760217F7F8000E647FD /* MyCustomCell.swift */,
+				84FCB762217F7FB600E647FD /* MyCustomCell.xib */,
+				84FCB76821804B3300E647FD /* FrontPhotoViewController.swift */,
+				84FCB76921804B3300E647FD /* FrontPhotoViewController.xib */,
+				84FCB76F218194D700E647FD /* RearPhotoViewController.swift */,
+				84FCB770218194D700E647FD /* RearPhotoViewController.xib */,
+				84FCB7722182034800E647FD /* CategoriesViewController.swift */,
+				84FCB7732182034800E647FD /* CategoriesViewController.xib */,
 			);
 			path = CardsList;
 			sourceTree = "<group>";
@@ -173,13 +176,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8421CE2021787BC000C469C5 /* AddCardViewController.xib in Resources */,
-				8421CE182177B4FA00C469C5 /* MainPageViewController.xib in Resources */,
 				8421CE1C2177B54E00C469C5 /* EmptyPageViewController.xib in Resources */,
-				8421CE322178A95B00C469C5 /* MyCustomCell.xib in Resources */,
-				8449B07B21704E8100191D89 /* CardsListViewController.xib in Resources */,
 				8449B06F21704C6900191D89 /* LaunchScreen.storyboard in Resources */,
+				84FCB7752182034800E647FD /* CategoriesViewController.xib in Resources */,
+				84FCB767217F815C00E647FD /* AddCardViewController.xib in Resources */,
+				84FCB763217F7FB600E647FD /* MyCustomCell.xib in Resources */,
 				8449B06C21704C6900191D89 /* Assets.xcassets in Resources */,
+				84FCB76B21804B3300E647FD /* FrontPhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8449B07A21704E8100191D89 /* CardsListViewController.swift in Sources */,
-				8421CE172177B4FA00C469C5 /* MainPageViewController.swift in Sources */,
+				84FCB766217F815C00E647FD /* AddCardViewController.swift in Sources */,
+				84FCB771218194D700E647FD /* RearPhotoViewController.swift in Sources */,
+				84FCB76A21804B3300E647FD /* FrontPhotoViewController.swift in Sources */,
+				84FCB761217F7F8000E647FD /* MyCustomCell.swift in Sources */,
 				8449B06521704C5D00191D89 /* AppDelegate.swift in Sources */,
+				84FCB7742182034800E647FD /* CategoriesViewController.swift in Sources */,
 				8421CE1B2177B54E00C469C5 /* EmptyPageViewController.swift in Sources */,
-				8421CE352178AA6400C469C5 /* UITableViewCell+MyCustomCell.m in Sources */,
-				8421CE1F21787BC000C469C5 /* AddCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

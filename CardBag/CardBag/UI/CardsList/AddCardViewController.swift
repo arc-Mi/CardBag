@@ -2,33 +2,54 @@
 //  AddCardViewController.swift
 //  CardBag
 //
-//  Created by Admin on 18.10.2018.
+//  Created by Admin on 23.10.2018.
 //  Copyright © 2018 arcMi. All rights reserved.
 //
 
 import UIKit
 
-class AddCardViewController: UIViewController, UITableViewDataSource {
+class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tblF: UITableView!
+    @IBOutlet weak var btnPhoto: UIButton!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return descField.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let table = UITableViewCell()
-        table.textLabel?.text = "Slot1"
-        return table
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
+        cell.textF.placeholder = descField[indexPath.row]
+        return cell
     }
     
-    
-    @IBOutlet weak var TableView: UITableView!
+    var descField: Array = ["Название карты", "Категория", "Процент скидки"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TableView.dataSource = self
-
+        let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
+        tblF.tableFooterView = UIView(frame: .zero)
+        self.tblF.register(nib, forCellReuseIdentifier: "MyCustomCell")
+        btnPhoto.setTitle("Сфотографировать", for: .normal)
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onChangeBtn(_ sender: Any) {
+        photoFrontPage()
+    }
+    @IBAction func onChangeCategories(_ sender: Any) {
+        categoriesPage()
+    }
+    
+    func photoFrontPage() {
+        let nextPage = FrontPhotoViewController()
+        navigationController?.pushViewController(nextPage, animated: true)
+    }
 
+    func categoriesPage() {
+        let categoriesPage = CategoriesViewController()
+        navigationController?.pushViewController(categoriesPage, animated: true)
+    }
 
     /*
     // MARK: - Navigation
