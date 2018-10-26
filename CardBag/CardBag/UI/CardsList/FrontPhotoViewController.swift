@@ -29,7 +29,6 @@ class FrontPhotoViewController: UIViewController {
     func nextPage() {
         let next = RearPhotoViewController()
         navigationController?.pushViewController(next, animated: true)
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     /*

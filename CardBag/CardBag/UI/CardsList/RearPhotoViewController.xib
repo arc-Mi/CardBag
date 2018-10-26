@@ -11,9 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RearPhotoViewController" customModule="CardBag">
             <connections>
-                <outlet property="btnSave" destination="rXS-mO-cQU" id="Kz1-Pp-Sm4"/>
-                <outlet property="lbl" destination="smV-3j-RY7" id="DX7-jA-myM"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="Sna-XX-zZu"/>
+                <outlet property="btnSave" destination="rXS-mO-cQU" id="F2b-gU-eYr"/>
+                <outlet property="lbl" destination="smV-3j-RY7" id="krA-tr-gLJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="2Uk-aK-Xwx"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -65,7 +65,7 @@
                 <constraint firstItem="smV-3j-RY7" firstAttribute="top" secondItem="oIZ-Yp-bBS" secondAttribute="bottom" constant="8" id="zUE-kV-xp9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="47.482014388489212" y="67.446043165467628"/>
+            <point key="canvasLocation" x="150.72463768115944" y="57.589285714285708"/>
         </view>
     </objects>
     <resources>

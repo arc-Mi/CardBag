@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F060BAD21832A6800FE0212 /* RearPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB770218194D700E647FD /* RearPhotoViewController.xib */; };
 		8421CE1B2177B54E00C469C5 /* EmptyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */; };
 		8421CE1C2177B54E00C469C5 /* EmptyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */; };
 		8449B06521704C5D00191D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449B06421704C5D00191D89 /* AppDelegate.swift */; };
@@ -176,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F060BAD21832A6800FE0212 /* RearPhotoViewController.xib in Resources */,
 				8421CE1C2177B54E00C469C5 /* EmptyPageViewController.xib in Resources */,
 				8449B06F21704C6900191D89 /* LaunchScreen.storyboard in Resources */,
 				84FCB7752182034800E647FD /* CategoriesViewController.xib in Resources */,
