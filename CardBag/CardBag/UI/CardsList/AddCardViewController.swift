@@ -10,7 +10,6 @@ import UIKit
 
 class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tblF: UITableView!
     @IBOutlet weak var btnPhoto: UIButton!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -19,7 +18,7 @@ class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
-        cell.textF.placeholder = descField[indexPath.row]
+        cell.textF.text = descField[indexPath.row]
         return cell
     }
     
@@ -27,9 +26,8 @@ class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnPhoto.layer.cornerRadius = 24
         let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
-        tblF.tableFooterView = UIView(frame: .zero)
-        self.tblF.register(nib, forCellReuseIdentifier: "MyCustomCell")
         btnPhoto.setTitle("Сфотографировать", for: .normal)
         // Do any additional setup after loading the view.
     }

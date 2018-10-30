@@ -10,7 +10,7 @@ import UIKit
 
 class MyCustomCell: UITableViewCell {
     
-    @IBOutlet weak var textF: UITextField!
+    @IBOutlet weak var textF: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

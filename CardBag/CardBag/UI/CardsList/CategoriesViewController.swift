@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tblCategories: UITableView!
@@ -22,18 +23,26 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
+    func setupSearchBar() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Поиск категории"
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+    }
+    
     var categArray: Array = ["Одежда и обувь", "Супермаркеты", "Красота", "Автомобиль"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
+        tblCategories.tableFooterView = UIView(frame: .zero)
         self.tblCategories.register(nib, forCellReuseIdentifier: "MyCustomCell")
         navigationItem.title = "Выбрать категорию"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        setupSearchBar()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     /*
     // MARK: - Navigation
 
@@ -43,5 +52,6 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

@@ -12,15 +12,18 @@ class RearPhotoViewController: UIViewController {
     
     @IBOutlet var lbl: UILabel!
     @IBOutlet var btnSave: UIButton!
+    @IBOutlet weak var lblCategories: UILabel!
+    @IBOutlet weak var lblSale: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnSave.layer.cornerRadius = 24
         btnSave.setTitle("СОХРАНИТЬ КАРТУ", for: .normal)
+        lblCategories.layer.cornerRadius = 12
+        lblSale.layer.cornerRadius = 12
         lbl.text = "Тыльная сторона"
         navigationController?.navigationBar.isTranslucent = false
-        navigationItem.title = "Спортмастер"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Спортмастер"        // Do any additional setup after loading the view.
     }
 
     /*

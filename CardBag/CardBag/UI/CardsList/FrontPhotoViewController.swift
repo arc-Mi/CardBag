@@ -12,10 +12,17 @@ class FrontPhotoViewController: UIViewController {
     
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var lblCategories: UILabel!
+    @IBOutlet weak var lblSale: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         btnNext.setTitle("ДАЛЕЕ", for: .normal)
+        lblCategories.layer.cornerRadius = 12
+        lblSale.layer.cornerRadius = 12
+        btnNext.layer.cornerRadius = 24
+        
         lbl.text = "Лицевая сторона"
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "Спортмастер"

@@ -9,7 +9,9 @@
 import UIKit
 
 class EmptyPageViewController: UIViewController {
-
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +20,10 @@ class EmptyPageViewController: UIViewController {
         
         navigationItem.title = "CARDbag"
         navigationItem.rightBarButtonItems = [addButton, userButton]
-
+        
+        lblTitle.text = "Нет карт"
+        lblText.text = "Нажмите + чтобы добавить вашу первую карту!"
+        
     }
 
     @objc private func addCard() {
