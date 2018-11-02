@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FDB7F46218B56330099B17A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDB7F45218B56330099B17A /* Alamofire.framework */; };
 		1F060BAD21832A6800FE0212 /* RearPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FCB770218194D700E647FD /* RearPhotoViewController.xib */; };
+		58E38D9592B24C5888CAC83B /* Pods_CardBag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0079815BE770641D3910B /* Pods_CardBag.framework */; };
 		8421CE1B2177B54E00C469C5 /* EmptyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */; };
 		8421CE1C2177B54E00C469C5 /* EmptyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */; };
 		8449B06521704C5D00191D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449B06421704C5D00191D89 /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FDB7F45218B56330099B17A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD4FB2D51FAB5DC668AE9A7 /* Pods-CardBag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardBag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardBag/Pods-CardBag.debug.xcconfig"; sourceTree = "<group>"; };
 		8421CE192177B54E00C469C5 /* EmptyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPageViewController.swift; sourceTree = "<group>"; };
 		8421CE1A2177B54E00C469C5 /* EmptyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPageViewController.xib; sourceTree = "<group>"; };
 		8449B06121704C5D00191D89 /* CardBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +46,8 @@
 		84FCB770218194D700E647FD /* RearPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RearPhotoViewController.xib; sourceTree = "<group>"; };
 		84FCB7722182034800E647FD /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		84FCB7732182034800E647FD /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		92AD14B2DDFAB228D0338136 /* Pods-CardBag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardBag.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardBag/Pods-CardBag.release.xcconfig"; sourceTree = "<group>"; };
+		CAD0079815BE770641D3910B /* Pods_CardBag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardBag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDB7F46218B56330099B17A /* Alamofire.framework in Frameworks */,
+				58E38D9592B24C5888CAC83B /* Pods_CardBag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F517DE11DDD0EE9C3091392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FDB7F45218B56330099B17A /* Alamofire.framework */,
+				CAD0079815BE770641D3910B /* Pods_CardBag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8449B05821704C5D00191D89 = {
 			isa = PBXGroup;
 			children = (
 				8449B06321704C5D00191D89 /* CardBag */,
 				8449B06221704C5D00191D89 /* Products */,
+				870EEE06D6A870FBEE729BF5 /* Pods */,
+				7F517DE11DDD0EE9C3091392 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +137,15 @@
 			path = CardsList;
 			sourceTree = "<group>";
 		};
+		870EEE06D6A870FBEE729BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD4FB2D51FAB5DC668AE9A7 /* Pods-CardBag.debug.xcconfig */,
+				92AD14B2DDFAB228D0338136 /* Pods-CardBag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8449B07321704C6900191D89 /* Build configuration list for PBXNativeTarget "CardBag" */;
 			buildPhases = (
+				4F5845ABE34CE4BC3EDB3A80 /* [CP] Check Pods Manifest.lock */,
 				8449B05D21704C5D00191D89 /* Sources */,
 				8449B05E21704C5D00191D89 /* Frameworks */,
 				8449B05F21704C5D00191D89 /* Resources */,
+				9E6B331A336D93E2201B8010 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +219,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F5845ABE34CE4BC3EDB3A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardBag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6B331A336D93E2201B8010 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CardBag/Pods-CardBag-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardBag/Pods-CardBag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8449B05D21704C5D00191D89 /* Sources */ = {
@@ -337,6 +414,7 @@
 		};
 		8449B07421704C6900191D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD4FB2D51FAB5DC668AE9A7 /* Pods-CardBag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -356,6 +434,7 @@
 		};
 		8449B07521704C6900191D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AD14B2DDFAB228D0338136 /* Pods-CardBag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

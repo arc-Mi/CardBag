@@ -8,27 +8,25 @@
 
 import UIKit
 
-class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AddCardViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var btnPhoto: UIButton!
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return descField.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
-        cell.textF.text = descField[indexPath.row]
-        return cell
-    }
-    
-    var descField: Array = ["Название карты", "Категория", "Процент скидки"]
+    @IBOutlet weak var cardName: UITextField!
+    @IBOutlet weak var categories: UITextField!
+    @IBOutlet weak var sale: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         btnPhoto.layer.cornerRadius = 24
-        let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
         btnPhoto.setTitle("Сфотографировать", for: .normal)
+        cardName.setBottomBorder()
+        categories.setBottomBorder()
+        sale.setBottomBorder()
+        cardName.placeholder = "Название карты"
+        categories.placeholder = "Категория"
+        sale.placeholder = "Скидка"
+        self.categories.delegate = self
+        navigationController?.navigationBar.isTranslucent = false
         // Do any additional setup after loading the view.
     }
     
@@ -59,4 +57,17 @@ class AddCardViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     */
 
+}
+
+extension UITextField {
+    func setBottomBorder() {
+        self.borderStyle = .none
+        self.layer.backgroundColor = UIColor.white.cgColor
+        
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 0.0
+    }
 }

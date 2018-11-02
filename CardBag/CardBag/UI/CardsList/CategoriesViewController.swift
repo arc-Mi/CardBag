@@ -7,11 +7,31 @@
 //
 
 import UIKit
-
+import Alamofire
 
 class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tblCategories: UITableView!
+    
+    struct TestData {
+        
+        var userId: Int = 0
+        var title: String = ""
+        var id = 0
+        var complited: Bool = false
+        
+        init (map: [String: AnyObject]) {
+            userId = map["userId"] as! Int
+            title = map["title"] as! String
+            id = map["id"] as! Int
+            complited = map["completed"] as! Bool
+        }
+        
+        func show() {
+            print ("userId = \(userId)  title = \(title)")
+        }
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categArray.count
@@ -39,6 +59,14 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         self.tblCategories.register(nib, forCellReuseIdentifier: "MyCustomCell")
         navigationItem.title = "Выбрать категорию"
         setupSearchBar()
+        
+        let url = URL(string: "http://cardbag.ru/api/categories")!
+        Alamofire.request(url, method: .get).responseJSON { (response) in
+            if let d = response.result.value as? [String: AnyObject] {
+                let object = TestData(map: d)
+                object.show()
+            }
+        }
         // Do any additional setup after loading the view.
     }
     
