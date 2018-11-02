@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FrontPhotoViewController" customModule="CardBag" customModuleProvider="target">
             <connections>
                 <outlet property="btnNext" destination="SAk-dX-uhw" id="esL-mP-w2Z"/>
-                <outlet property="btnPhoto" destination="fLC-Dp-L19" id="49T-wa-Gmt"/>
+                <outlet property="btnPhoto" destination="fLC-Dp-L19" id="FU5-Fz-n3C"/>
                 <outlet property="lbl" destination="smV-3j-RY7" id="X1Y-dI-Tmh"/>
                 <outlet property="lblCategories" destination="y8A-Oq-mVC" id="NL7-4a-GBT"/>
                 <outlet property="lblSale" destination="XQu-Ip-fpI" id="Qmu-rE-zlL"/>

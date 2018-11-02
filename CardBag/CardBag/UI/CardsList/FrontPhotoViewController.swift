@@ -11,6 +11,7 @@ import UIKit
 class FrontPhotoViewController: UIViewController {
     
     @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnPhoto: UIButton!
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var lblCategories: UILabel!
     @IBOutlet weak var lblSale: UILabel!
