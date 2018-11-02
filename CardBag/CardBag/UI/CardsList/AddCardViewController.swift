@@ -26,6 +26,7 @@ class AddCardViewController: UIViewController, UITextFieldDelegate {
         categories.placeholder = "Категория"
         sale.placeholder = "Скидка"
         self.categories.delegate = self
+        categories.addTarget(self, action: #selector(myTargetFunction), for: UIControl.Event.touchDown)
         navigationController?.navigationBar.isTranslucent = false
         // Do any additional setup after loading the view.
     }
@@ -45,6 +46,11 @@ class AddCardViewController: UIViewController, UITextFieldDelegate {
     func categoriesPage() {
         let categoriesPage = CategoriesViewController()
         navigationController?.pushViewController(categoriesPage, animated: true)
+    }
+    
+    @objc func myTargetFunction(textField: UITextField) {
+        let categoriesPage = CategoriesViewController()
+        navigationController?.pushViewController(categoriesPage, animated: true)        
     }
 
     /*
